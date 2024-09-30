@@ -1,5 +1,4 @@
 import React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import "./App.css";
 import FooterSection from "./Contents/Footer";
 import ProjectsSection from "./Contents/Projects";
