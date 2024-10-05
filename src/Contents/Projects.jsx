@@ -1,15 +1,23 @@
 import React, { useState } from "react";
 import { Modal } from "react-responsive-modal";
 import "react-responsive-modal/styles.css";
+import "../ApplicationImages/echeck1.jpeg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+
 
 const projectData = [
   {
     title: "Echeck-Insurance",
     images: [
-      // require("../AplicationImages/echeck1.jpeg"),
-      // require("../AplicationImages/echeck2.jpeg"),
-      // require("../AplicationImages/echeck3.jpeg"),
+      require("../ApplicationImages/echeck1.jpeg"),
+      require("../ApplicationImages/echeck2.jpeg"),
+      require("../ApplicationImages/echeck3.jpeg"),
+      require("../ApplicationImages/echeck4.jpeg"),
+      require("../ApplicationImages/echeck5.jpeg"),
+      require("../ApplicationImages/echeck6.jpeg"),
+      require("../ApplicationImages/echeck7.jpeg"),
+      require("../ApplicationImages/echeck8.jpeg"),
+      require("../ApplicationImages/echeck9.jpeg"),
     ],
     description:
       "As a Full Stack Developer for the e-check application, I used Node.js, React.js, AWS, MySQL, and Prisma to build the application and manage infrastructure. I collaborated with teams using agile methodologies to deliver high-quality solutions.",
