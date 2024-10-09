@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import resume from "../src/Contents/Esakkiammal2609.pdf";
 import Projects from "../src/Contents/Projects";
 import Footer from "../src/Contents/Footer";
