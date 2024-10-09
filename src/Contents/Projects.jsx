@@ -63,7 +63,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <div className="box-two w-full  p-6 flex flex-col justify-center">
+    <div className="box-two w-full  p-6 flex flex-col justify-center mt-5">
       <h2 className="text-4xl font-bold text-white mb-10">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {projectData.map(({ title, images, description }) => (
@@ -71,7 +71,7 @@ const ProjectsSection = () => {
             key={title}
             className="bg-white bg-opacity-20 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
           >
-            <h3 className="text-xl font-semibold mb-3 text-white">{title}</h3>
+            <h3 className="text-xl font-semibold mb-5 text-white">{title}</h3>
             <span
               onClick={() => openModal(images)}
               className="text-red-950 font-bold mb-5 hover:text-gray-900 cursor-pointer transition duration-200"
