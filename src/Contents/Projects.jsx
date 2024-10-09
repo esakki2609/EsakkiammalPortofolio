@@ -4,7 +4,6 @@ import "react-responsive-modal/styles.css";
 import "../ApplicationImages/echeck1.jpeg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
-
 const projectData = [
   {
     title: "Echeck-Insurance",
@@ -20,7 +19,7 @@ const projectData = [
       require("../ApplicationImages/echeck9.jpeg"),
     ],
     description:
-      "As a Full Stack Developer for the e-check application, I used Node.js, React.js, AWS, MySQL, and Prisma to build the application and manage infrastructure. I collaborated with teams using agile methodologies to deliver high-quality solutions.",
+      "I recently designed and developed eCheck Insurance, a platform that simplifies comparing insurance plans. Using React.js and Material UI, I created a responsive, user-friendly interface that allows users to easily search and compare policies. On the back end, I built scalable APIs with Node.js to integrate insurance databases and provide real-time data. I implemented secure authentication and used AWS Serverless to ensure scalability and performance. This project enhanced my skills in full-stack development, particularly in API integration, performance optimization, and creating secure, scalable web applications to meet both user and business needs.",
   },
   {
     title: "On the Stage",
@@ -34,7 +33,7 @@ const projectData = [
       require("../ApplicationImages/ots7.jpeg"),
     ],
     description:
-      "I developed On the Stage using Node.js, React.js, Azure DevOps, MySQL, MongoDB, and integrated RESTful APIs to ensure smooth functionality. Managed key aspects of the project lifecycle independently and engaged with clients.",
+      "In March 2023, I worked on On The Stage, a platform designed to help theaters manage ticket sales, productions, and audience engagement. I contributed to enhancing the front-end experience using React.js, ensuring a seamless interface for theater managers and attendees. I helped integrate key features like ticket purchasing, event scheduling, and real-time notifications for upcoming shows. On the back end, I worked with Node.js and Azure devops to manage large volumes of ticketing and user data, ensuring the platform was both secure and scalable to meet high demand.",
   },
 ];
 
@@ -64,22 +63,22 @@ const ProjectsSection = () => {
   };
 
   return (
-    <div className="box-two w-full md:w-1/2 p-8 flex flex-col justify-center">
-      <h2 className="text-4xl font-bold text-white mb-3">Projects</h2>
-      <div className="flex flex-col space-y-4">
+    <div className="box-two w-full  p-6 flex flex-col justify-center">
+      <h2 className="text-4xl font-bold text-white mb-10">Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {projectData.map(({ title, images, description }) => (
           <div
             key={title}
             className="bg-white bg-opacity-20 p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-xl"
           >
-            <h3 className="text-xl font-semibold mb-2 text-white">{title}</h3>
+            <h3 className="text-xl font-semibold mb-3 text-white">{title}</h3>
             <span
               onClick={() => openModal(images)}
-              className="text-red-950 font-bold mb-2 hover:text-gray-900 cursor-pointer transition duration-200"
+              className="text-red-950 font-bold mb-5 hover:text-gray-900 cursor-pointer transition duration-200"
             >
               View the Application Screenshots
             </span>
-            <p className="text-white">{description}</p>
+            <p className="text-white text-justify mt-5">{description}</p>
           </div>
         ))}
       </div>
